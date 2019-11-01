@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Attending NVMSA 2019"
+date:   2019-08-18 21:01:59 +0800
+categories: conference 
+---
+课程组成员（liqa, liw, wangzw, ful, huangjc, huxr）参加在杭州主办的NVMSA 2019会议。
+
+
+The 8th IEEE Non-Volatile Memory Systems and Applications Symposium 
+Hangzhou, China, August 18-21, 2019
+
+<a href="https://nvmsa2019.github.io/index/">
+https://nvmsa2019.github.io/index/
+</a>
+

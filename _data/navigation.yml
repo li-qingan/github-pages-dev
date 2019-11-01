@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: People
+  link: /people.html
+- name: Li Qingan
+  link: /li-qingan.html
+- name: News
+  link: /blog.html
