@@ -61,8 +61,9 @@ Stack-Size Sensitive On-Chip Memory Backup for Self-Powered Nonvolatile Processo
 Write Mode Aware Loop Tiling for High Performance Low Power Volatile PCM in Embedded Systems. IEEE Trans. Computers 65(7): 2313-2324 (2016) (CCF A)
 - Qing'an Li, Yanxiang He, Jianhua Li, Liang Shi, Yiran Chen, Chun Jason Xue:
 Compiler-Assisted Refresh Minimization for Volatile STT-RAM Cache. IEEE Trans. Computers 64(8): 2169-2181 (2015)  （CCF A）
-- Qing'an Li, Mengying Zhao, Jingtong Hu, Yongpan Liu, Yanxiang He, Chun Jason Xue:
-Compiler directed automatic stack trimming for efficient non-volatile processors. DAC 2015: 183:1-183:6  （CCF A）
+	- Minimize refreshing of volatile cache via such a data allocation scheme that more data writes finish the refresh work, leading to less requirement of additional refresh overhead.
+	- Reference to the experimental setup here: [VolatileCacheRefreshOpti](https://github.com/li-qingan/VolatileCacheRefreshOpti).
+- Qing'an Li, Mengying Zhao, Jingtong Hu, Yongpan Liu, Yanxiang He, Chun Jason Xue: Compiler directed automatic stack trimming for efficient non-volatile processors. DAC 2015: 183:1-183:6 （CCF A）
 
 
 ## 英文论文列表：

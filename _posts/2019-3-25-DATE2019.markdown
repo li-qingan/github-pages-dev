@@ -4,7 +4,7 @@ title:  "Attending DATE 2019"
 date:   2019-03-25 21:01:59 +0800
 categories: conference DATE
 ---
-课程组成员（liqa, liw）参加在意大利佛罗伦萨主办的DATE 2019会议。李伟同学宣讲了《A Wear Leveling Aware Memory Allocator for Both Stack and Heap Management in PCM-based Main Memory Systems》。
+课程组成员（liqa, liw）参加在意大利佛罗伦萨主办的DATE 2019会议。liw同学宣讲了《A Wear Leveling Aware Memory Allocator for Both Stack and Heap Management in PCM-based Main Memory Systems》。
 
 Design Automation and Test in Europe.
 
