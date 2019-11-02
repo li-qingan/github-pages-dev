@@ -6,6 +6,7 @@ layout: default
 
 李清安，博士，武汉大学计算机学院副教授，硕士生导师。
 <a href="http://cs.whu.edu.cn/teacherinfo.aspx?id=195">个人官方网站<a>
+<a href="/index.html"> 课题组信息网站 </a>
 
 邮箱：<img src="email.gif" alt="qingan_at_whu_edu_cn" height=16>
 
@@ -36,7 +37,6 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 新型存储技术
 - 语音识别
   
-<a href="/index.html"> 课程组信息 </a>
 
 # 教学
 - 系统级程序设计（教材：《深入理解计算机系统》）
@@ -62,7 +62,7 @@ Write Mode Aware Loop Tiling for High Performance Low Power Volatile PCM in Embe
 - Qing'an Li, Yanxiang He, Jianhua Li, Liang Shi, Yiran Chen, Chun Jason Xue:
 Compiler-Assisted Refresh Minimization for Volatile STT-RAM Cache. IEEE Trans. Computers 64(8): 2169-2181 (2015)  （CCF A）
 	- Minimize refreshing of volatile cache via such a data allocation scheme that more data writes finish the refresh work, leading to less requirement of additional refresh overhead.
-	- Reference to the experimental setup here: [VolatileCacheRefreshOpti](https://github.com/li-qingan/VolatileCacheRefreshOpti).
+	- Refer to the experimental source code: [VolatileCacheRefreshOpti](https://github.com/li-qingan/VolatileCacheRefreshOpti).
 - Qing'an Li, Mengying Zhao, Jingtong Hu, Yongpan Liu, Yanxiang He, Chun Jason Xue: Compiler directed automatic stack trimming for efficient non-volatile processors. DAC 2015: 183:1-183:6 （CCF A）
 
 
