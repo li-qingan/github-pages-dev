@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Attending NVMSA 2019"
+title:  "参加 Kaldi 线下交流会"
 date:   2019-11-1 21:01:59 +0800
 categories: conference 
 ---
