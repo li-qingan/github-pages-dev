@@ -1,6 +1,9 @@
 [submodule "githubIO"]
 	path = githubIO
 	url = https://github.com/li-qingan/li-qingan.github.io.git
+[submodule "li-qingan.github.io"]
+	path = li-qingan.github.io
+	url = https://github.com/li-qingan/li-qingan.github.io.git
 [submodule "_site"]
 	path = _site
 	url = https://github.com/li-qingan/li-qingan.github.io.git

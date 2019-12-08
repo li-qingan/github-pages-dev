@@ -1,0 +1,7 @@
+- name: Up
+  link: ./index
+- name: Course-list
+  link: /li-qingan
+- name: Home
+  link: /
+

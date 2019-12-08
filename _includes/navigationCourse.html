@@ -1,0 +1,8 @@
+<nav>
+    {% for item in site.data.navigationCourse %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %} style="text-decoration: none">
+          {{ item.name }}  
+          &emsp;
+      </a>
+    {% endfor %}
+  </nav>

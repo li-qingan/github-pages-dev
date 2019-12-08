@@ -1,5 +1,5 @@
 ---
-title: Comsoft@whu
+title: comsoft@WHU
 layout: default
 ---
 
