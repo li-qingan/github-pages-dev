@@ -87,7 +87,7 @@ layout: defaultCourse
 
 ## Concept figures
 1. Memory Hierachy
-![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fli-qingan.github.io%2Fcourse%2FcomputerOrganization%2Findex.md)
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fgithub.com%2Fli-qingan%2Fgithub-pages-dev%2Fblob%2Fmaster%2Fcourse%2FcomputerOrganization%2Findex.md)
 <details> 
 <summary></summary>
 custom_mark10
