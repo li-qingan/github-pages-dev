@@ -28,7 +28,7 @@ layout: defaultCourse
 ## 实验课程
 1. Data lab（20分，<a href="DataLab.html">点击查看详细说明</a>）
 2. Bomb lab（25分，<a href="BombLab.html">点击查看详细说明</a>）
-3. Attack lab（25分，<a href="BufferLab.html">点击查看详细说明</a>）
+3. Attack lab（25分，<a href="AttackLab.html">点击查看详细说明</a>）
 4. 实验报告（30分，不少于800字）
    - 内容包括某个具体实验过程钟遇到的问题、挑战、解决方案。
    - 内容还应包括该课程的感受及建议。

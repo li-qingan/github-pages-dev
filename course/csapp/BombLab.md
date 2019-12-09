@@ -4,6 +4,9 @@ layout: defaultCourse
 ---
 
 ## Bomb-lab实验介绍
+
+<a href="http://csapp.cs.cmu.edu/3e/bomblab.pdf">点击下载cmu官网实验说明详情</a>
+
 这个实验帮助学生练习和掌握机器级程序的基本原理，以及一些通用的调试和反向工程技巧。
 
 ### 二进制炸弹
