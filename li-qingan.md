@@ -37,10 +37,10 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 新型存储技术
 - 语音识别
   
-
+<span id=”course-list”>
 # 教学
-- <a href="course/csapp/index">系统级程序设计</a>
-- <a href="course/computerOrganization/index">计算机组成与设计</a>
+- <a href="course/csapp/index">系统级程序设计（教材：《Computer System: A Programmer's Perspective》）</a>
+- <a href="course/computerOrganization/index">计算机组成与设计(教材：《Computer organization and design: software/hardware interface》)</a>
 - Unix高级编程（教材：《Advanced programing in Unix environment》）
 - 软件测试
 - <a href="course/scienceReading">自然科学经典导引</a>

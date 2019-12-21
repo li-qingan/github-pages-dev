@@ -1,7 +1,7 @@
 - name: Up
   link: ./index
 - name: Course-list
-  link: /li-qingan
+  link: /li-qingan#教学
 - name: Home
   link: /
 
