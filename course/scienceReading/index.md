@@ -10,4 +10,4 @@ layout: defaultCourse
 5. <a href="DNA">《DNA：生命的秘密》讨论题</a>
 6. <a href="SearchOfSoul">《惊人的假说》讨论题</a>
 7. <a href="Euclids-Elements">《几何原本》讨论题 </a>
-8. 《科学与假设》讨论题
+8. <a href="Hypothesis">《科学与假设》讨论题</a>
