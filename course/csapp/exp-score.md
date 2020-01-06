@@ -3,7 +3,7 @@ title: csapp course
 layout: defaultCourse
 ---
 
-<h1>course scores</h1>
+<h1>Experiment scores</h1>
 
 <ul>
     <li>

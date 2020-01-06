@@ -37,7 +37,6 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 新型存储技术
 - 语音识别
   
-<span id=”course-list”>
 # 教学
 - <a href="course/csapp/index">系统级程序设计（教材：《Computer System: A Programmer's Perspective》）</a>
 - <a href="course/computerOrganization/index">计算机组成与设计(教材：《Computer organization and design: software/hardware interface》)</a>
@@ -62,9 +61,11 @@ Stack-Size Sensitive On-Chip Memory Backup for Self-Powered Nonvolatile Processo
 Write Mode Aware Loop Tiling for High Performance Low Power Volatile PCM in Embedded Systems. IEEE Trans. Computers 65(7): 2313-2324 (2016) (CCF A)
 - Qing'an Li, Yanxiang He, Jianhua Li, Liang Shi, Yiran Chen, Chun Jason Xue:
 Compiler-Assisted Refresh Minimization for Volatile STT-RAM Cache. IEEE Trans. Computers 64(8): 2169-2181 (2015)  （CCF A）
-	- Minimize refreshing of volatile cache via such a data allocation scheme that more data writes finish the refresh work, leading to less requirement of additional refresh overhead.
-	- Refer to the experimental source code: [VolatileCacheRefreshOpti](https://github.com/li-qingan/VolatileCacheRefreshOpti).
+  - Minimize refreshing of volatile cache via such a data allocation scheme that more data writes finish the refresh work, leading to less requirement of additional refresh overhead.
+  - [pdf](doc/Toc2015.pdf)
+  - [Source code](https://github.com/li-qingan/VolatileCacheRefreshOpti).
 - Qing'an Li, Mengying Zhao, Jingtong Hu, Yongpan Liu, Yanxiang He, Chun Jason Xue: Compiler directed automatic stack trimming for efficient non-volatile processors. DAC 2015: 183:1-183:6 （CCF A）
+  - [pdf](doc/DAC2015.pdf)
 
 
 ## 英文论文列表：
