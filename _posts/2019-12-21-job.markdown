@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Jobs in Hong Kong University (本科毕业及以上)"
+date:   2019-12-20 21:01:59 +0800
+categories: job
+news: false
+---
+Jobs in Hong Kong University
+
+# 雇主
+香港大学
+
+# 职位
+Research Assistant（研究助理）1-3名
+
+# 工作内容
+用Deep learning等AI技术做基于微生物病原体的疾病预测与诊断系统开发。
+- 基本要求
+  - 精通Python、tensorflow和keras。
+  - 本科及以上学生。
+- 加分项：
+  - ACM编程竞赛经验
+  - 科研经验
+
+
+# 工作地点
+新界(主要), 港島, 廣東汕頭三地
+
+# 待遇
+- 月薪不低于25K港币（22.5K人民币）
+- 优秀者可申请转香港大学PhD
+- 香港研究经历，后续申请英国高校比如牛津、剑桥的PhD很有优势，申请美国高校也有一定优势
+
+# 简历投递
+Dr. Huang Yazhi：bill7@hku.hk
+
+# 友情提示
+可在港岛或新界租房。港岛月租金：4000-5000港币；新界月租金：3000-4000港币。
+汕头期间提供免费住房。
+
+
