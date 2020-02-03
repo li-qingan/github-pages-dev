@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Attending ASP-DAC 2020"
+date:   2020-01-13 21:01:59 +0800
+categories: conference
+news: true
+---
+课程组成员（liw, wangzw, huangjc）在北京参加ASP-DAC 2020会议。liw获得ACM SIGDA资助参加ASP-DAC SRF论坛。
+
+<a href="http://www.aspdac.com/aspdac/">
+Asia and South Pacific Design Automation Conference
+</a>
+
+<a href="https://aspdac2020.github.io/aspdac20/sigda_srf/index.html">
+SIGDA Student Research Forum
+</a>
