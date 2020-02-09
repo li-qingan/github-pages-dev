@@ -156,14 +156,14 @@ JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）�
 - 在增量回收过程中，优先回收含有最多垃圾对象的小块。
 ![G1-region](g1-02.png)
 
-阶段：
 
-- Evacuation Pause: Fully Young
-- 
+1. Evacuation Pause: Fully Young
+
+
 全局停顿，GC线程间并行，将Young区的活跃对象拷贝到survivor区（任何空闲的Young区都可视为Survivor区）。同时完成部分Old区的Initial Mark工作。
 
-- Concurrent Marking
-- 
+
+2. Concurrent Marking
 
 	- Initial Mark: 短时全局停顿，用来标记所有从GC roots可达的对象，部分工作在前面的Evacuation Pause阶段已完成。
 	- Root Region Scan: 当前实现中是扫描Survivor区域可达的活跃对象。
@@ -171,8 +171,7 @@ JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）�
 	- Remark: 全局停顿，与CMS类似，完成标记过程。将前阶段因为应用线程并发更新导致的活跃对象标记出来。
 	- Cleanup: 绝大部分并发。为后续做准备，计算所有活跃对象，对各小区垃圾密集程度排序；回收全垃圾小块。
 	
-- Evacuation Pause: Mixed
-- 
+3. Evacuation Pause: Mixed
 
 如果上述的Cleanup阶段不能很好地回收Old区域，就需要一次混合回收，同时回收Young区域和Old区域。该回收过程会根据标记阶段的排序，以及软实时性能指标来选择回收小块集（collection set）；为了支持增量回收，利用remembered set技术来识别和处理来自外部的引用，就像在CMS中引入card table计算机一样。注意，前面marking阶段识别出的垃圾对象导致的外部引用可以忽略。
 ![g1-mixed](g1-mixed.png)
