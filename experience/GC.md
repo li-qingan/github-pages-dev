@@ -109,14 +109,14 @@ int send_request() {
 JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）和Old区域。
 ![java-gc](how-java-garbage-collection-works.png)
 
-- Eden: 创建对象时使用的区域。Eden被划分成多个Thread Local Allocation Buffer (TLAB)，以便支持不同线程之间独立分配堆区域而不需要同步；当TLAB不够时，则在共享的Eden区域分配；如果还不够，则对Young区域进行GC；如果还不够，则在Old区域分配。在对Young区域进行GC时，如果有Old区域引用Young区域，则利用card marking方法处理，以避免全局GC。在对Young区域GC时，所有的活跃对象都被拷贝到一个survior空间，所以GC算法为：Marking-Sweeping + Copy。
+- Eden: 创建对象时使用的区域。Eden被划分成多个Thread Local Allocation Buffer (TLAB)，以便支持不同线程之间独立分配堆区域而不需要同步；当TLAB不够时，则在共享的Eden区域分配；如果还不够，则对Young区域进行GC；如果还不够，则在Old区域分配。在对Young区域进行GC时，如果有Old区域引用Young区域，则利用<font color=blue>card marking</font>方法处理，以避免全局GC。在对Young区域GC时，所有的活跃对象都被拷贝到一个survior空间，所以GC算法为：Marking-Sweeping + Copy。
 - Survivor：有两个survivor空间，分别称为from和to。From和To保持一个为空，用于在下次GC时存储所有的Young区域活跃对象（包括Eden和From）；之后，Eden和From清空，分别用于准备新的分配和准备下次GC存储。如此反复多次之后，仍然活跃的对象被拷贝到Old区域。
 - Old：Old区域通常非常大，其GC频率要低很多。其GC算法需要考虑碎片问题，所以为：Marking-Sweeping + Compact.
 - Metaspace：主要用于存储class definition。
 
 ### 4. GC阶段
 - Minor GC: 即Eden区域的GC。新对象不够时触发；GC roots只需考虑从Old到Young引用（否则会错误），不需考虑从Young到Old的引用（Old区域不变）；全局停顿，时长取决于copy的活跃对象的成本。
-- Major GC or Full GC：即Old区域的GC。
+- Major GC or Full GC：即Old区域的GC。因Old区域非常大，所以是影响全局停顿的主要因素。
 
 ## JVM中的GC:实现
 ### 1. Serial GC
@@ -124,7 +124,9 @@ JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）�
 ### 2. Parallel GC
 全局停顿，多线程GC可以加快GC阶段
 ### 3. Concurrent Mark and Sweep
-不用全局停顿，大部分GC工作与应用线程并发，所以减少停顿时间；吞吐量通常弱于Parallel GC。
+目标：不用全局停顿，大部分GC工作与应用线程并发，所以减少停顿时间。
+
+思路：
 
 - Major GC不进行compact，而使用空闲指针，以避免major GC的长停顿。
 - 尽量与应用线程并发。
@@ -143,13 +145,47 @@ JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）�
 优缺点： 
 
 - 优点： 减少停顿时间。
-- 缺点：Old区域的碎片化；停顿时间不可预测。
+- 缺点：Old区域的碎片化；停顿时间不可预测；吞吐量通常弱于Parallel GC。
 
 ### 4. G1算法
+目标：让全局停顿时间可预测、可管理，从而实现软实时GC：在给定时间片内，停顿时间<font color=blue>尽量</font>不超过指定比例。
+
+思路：
+
+- 将Young区域和Old区域进一步划分成小块（典型值为2048），每个小块可以是Eden、Survivor或Old区域。这样，可以进行增量回收，每次值回收2048块的一个子集（包括所有Young小块和部分Old小块）。
+- 在增量回收过程中，优先回收含有最多垃圾对象的小块。
+![G1-region](g1-02.png)
+
+阶段：
+
+- Evacuation Pause: Fully Young
+- 
+全局停顿，GC线程间并行，将Young区的活跃对象拷贝到survivor区（任何空闲的Young区都可视为Survivor区）。同时完成部分Old区的Initial Mark工作。
+
+- Concurrent Marking
+- 
+
+	- Initial Mark: 短时全局停顿，用来标记所有从GC roots可达的对象，部分工作在前面的Evacuation Pause阶段已完成。
+	- Root Region Scan: 当前实现中是扫描Survivor区域可达的活跃对象。
+	- Concurrent Mark: 与CMS类似，遍历所有活跃对象，并在位图中标记。为了确保一致性，在此期间应用线程对对象引用的更新不能影响正分析的引用图。利用称为<font color=blue>Pre-Write barriers</font>的技术，每次有更新时，就将先前被引用对象保存在缓冲区备份，供Concurrent Marking线程使用。
+	- Remark: 全局停顿，与CMS类似，完成标记过程。将前阶段因为应用线程并发更新导致的活跃对象标记出来。
+	- Cleanup: 绝大部分并发。为后续做准备，计算所有活跃对象，对各小区垃圾密集程度排序；回收全垃圾小块。
+	
+- Evacuation Pause: Mixed
+- 
+
+如果上述的Cleanup阶段不能很好地回收Old区域，就需要一次混合回收，同时回收Young区域和Old区域。该回收过程会根据标记阶段的排序，以及软实时性能指标来选择回收小块集（collection set）；为了支持增量回收，利用remembered set技术来识别和处理来自外部的引用，就像在CMS中引入card table计算机一样。注意，前面marking阶段识别出的垃圾对象导致的外部引用可以忽略。
+![g1-mixed](g1-mixed.png)
+
+回收过程跟CMS类似，利用并行GC线程识别活跃对象，并将活跃对象拷贝到survivor小块，并回收原来的小块。
+
+为了维护remembered sets，在运行时，利用称为<font color=blue>Post-Write Barrier</font>的技术，跟踪每个写操作，进而记录跨小块的引用。该技术会导致性能瓶颈，所以需要异步和别的优化。
+
 
 ### 5. Shenandoah
-非分代算法；并发copy。
+非分代算法；并发copy；面向多核、大堆场景。
 https://rkennke.wordpress.com/
+https://plumbr.io/handbook/garbage-collection-algorithms-implementations#shenandoah
 
 
 
