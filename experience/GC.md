@@ -183,7 +183,9 @@ JVM中的堆区域划分成Young区域（包括Eden、Survivor1、Survivor2）�
 
 ### 5. Shenandoah
 非分代算法；并发copy；面向多核、大堆场景。
+
 https://rkennke.wordpress.com/
+
 https://plumbr.io/handbook/garbage-collection-algorithms-implementations#shenandoah
 
 

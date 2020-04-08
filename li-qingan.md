@@ -37,12 +37,14 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 新型存储技术
 - 语音识别
   
-# 教学
+# 教学 
 - <a href="course/csapp/index">系统级程序设计（教材：《Computer System: A Programmer's Perspective》）</a>
 - <a href="course/computerOrganization/index">计算机组成与设计(教材：《Computer organization and design: software/hardware interface》)</a>
 - Unix高级编程（教材：《Advanced programing in Unix environment》）
 - 软件测试
 - <a href="course/scienceReading">自然科学经典导引</a>
+
+<a href="course/textbookList.md">（计算机相关教材推荐）</a>
 
 # 主持科研项目
 <!-- 面向XX领域的语音识别技术，横向课题，2019-2021 -->
@@ -53,6 +55,7 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 ## 部分论文
 - Wei Li, Ziqi Shuai, Chun Jason Xue, Mengting Yuan, Qingan Li: 
 A Wear Leveling Aware Memory Allocator for Both Stack and Heap Management in PCM-based Main Memory Systems. DATE 2019: 228-233 (CCF B)
+  - [pdf](doc/DATE2019.pdf)
 - Fuyang Li, Qing'an Li, Chun Jason Xue:
 Checkpointing-aware Data Allocation for Energy Harvesting Powered Non-volatile Processors. NVMSA 2019: 1-6
 - Mengying Zhao, Chenchen Fu, Zewei Li, Qing'an Li, Mimi Xie, Yongpan Liu, Jingtong Hu, Zhiping Jia, Chun Jason Xue:
