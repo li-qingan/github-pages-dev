@@ -43,8 +43,8 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - Unix高级编程（教材：《Advanced programing in Unix environment》）
 - 软件测试
 - <a href="course/scienceReading">自然科学经典导引</a>
-
-<a href="doc/TextBookList.md">（计算机相关教材推荐）</a>
+  
+<a href="doc/Books">（计算机相关教材推荐）</a>
 
 # 主持科研项目
 <!-- 面向XX领域的语音识别技术，横向课题，2019-2021 -->
