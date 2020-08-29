@@ -53,3 +53,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+#Google Analytics
+google_analytics: UA-169739839-1  # your google analytics

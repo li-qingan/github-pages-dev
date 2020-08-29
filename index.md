@@ -53,3 +53,10 @@ layout: default
 - 语音数据采集APP或小程序或公众号开发
 - Android ART研究
 - 面向持久化存储的优化方法
+
+<div align="center">
+<span id="busuanzi_container_site_uv">本站访客量<span id="busuanzi_value_site_uv"></span>人</span> 
+<br>
+<span id="busuanzi_container_site_pv">本站点击量<span id="busuanzi_value_site_pv"></span>次</span>
+
+</div>

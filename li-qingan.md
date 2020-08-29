@@ -23,7 +23,8 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 2004 - 2008   武汉大学计算机学院 学士学位
 
 ## 获奖
-- 2018 全国高校计算机教育大会优秀论文奖 .
+- 2019年度武汉大学优秀教学研究论文三等奖《基于LLVM的编译实验课程设计》.
+- 2018 全国高校计算机教育大会优秀论文奖.
 - 2014 湖北省科技进步一等奖（排名14）.
 - 2014 ACM Wuhan Doctoral Dissertation Award. 
 - 2014 香港城市大学Peter Ho Conference Scholarship. 
