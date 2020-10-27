@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Accepted in ICCD 2020 (CCF B)"
+date:   2020-09-18 21:01:59 +0800
+categories: conference
+news: true
+---
+
+恭喜课程组成员（liw）的论文被ICCD 2020会议录用！
+
+论文标题《Loop2Recursion: Compiler-Assisted Wear Leveling for Non-Volatile Memory》。
+
+<a href="hhttps://www.iccd-conf.com/Home.html">
+https://www.iccd-conf.com/Home.html
+</a>
