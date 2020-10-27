@@ -11,10 +11,9 @@ layout: default
 邮箱：<img src="email.gif" alt="qingan_at_whu_edu_cn" height=16>
 
 
-研究领域包括代码分析、嵌入式系统和机器学习等。先后发表多篇论文在TC、TPDS、TVLSI、TCAD、TODEAS等IEEE/ACM Transactions国际权威期刊和DATE、LCTES、DAC、ISLPED、ASP-DAC、CASES、TrustCom等重要国际会议上。主持或参与多项国家和省部级科研项目。
+研究领域包括代码分析、嵌入式系统和机器学习等。先后发表多篇论文在TC、TPDS、TVLSI、TCAD、TODEAS等IEEE/ACM Transactions国际权威期刊和DATE、LCTES、DAC、DATE、ICCD等知名会议上。主持或参与多项国家和省部级科研项目。
 
-LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Systems, ACM Transactions on Embedded Computing Systems, Journal of Systems Architecture, IET Computers & Digital Techniques等SCI期刊审稿人，《计算机学报》，《计算机研究与发展》审稿人。
-
+LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Systems, ACM Transactions on Embedded Computing Systems, Journal of Systems Architecture等SCI期刊审稿人，《计算机学报》，《计算机研究与发展》审稿人。
 
 
 ## 教育经历
@@ -39,6 +38,7 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
 - 语音识别
   
 # 教学 
+## 本科生课程
 - <a href="course/csapp/index">系统级程序设计（教材：《Computer System: A Programmer's Perspective》）</a>
 - <a href="course/computerOrganization/index">计算机组成与设计(教材：《Computer organization and design: software/hardware interface》)</a>
 - Unix高级编程（教材：《Advanced programing in Unix environment》）
@@ -47,14 +47,19 @@ LCTES 2015 publicity co-chair。IEEE Trans. on CAD, IEEE Transactions on VLSI Sy
   
 <a href="doc/Books">（计算机相关教材推荐）</a>
 
+## 研究生课程
+- <a href="course/softwareOpti/index">软件优化技术</a>
+
 # 主持科研项目
-<!-- 面向XX领域的语音识别技术，横向课题，2019-2021 -->
+- 面向XX领域的语音识别技术，横向课题，2019-2021 
 - 面向PCM内存的编译优化，国家自然科学基金青年项目，2016-2018
 - 面向非易失性片上存储的编译优化，湖北省自然科学基金，2015-2016
   
 # 论文
 ## 部分论文
-- Wei Li, Ziqi Shuai, Chun Jason Xue, Mengting Yuan, Qingan Li: 
+- Wei Li, Libing Wu, Mengting Yuan, Chun Jason Xue, Jingling Xue, Qingan Li<sup>*</sup>: Loop2Recursion: Compiler-Assisted Wear Leveling for Non-Volatile Memory. ICCD 2020. Accepted. (CCF B).
+  - [pdf](doc/iccd_paper_0916.pdf)
+- Wei Li, Ziqi Shuai, Chun Jason Xue, Mengting Yuan, Qingan Li<sup>*</sup>: 
 A Wear Leveling Aware Memory Allocator for Both Stack and Heap Management in PCM-based Main Memory Systems. DATE 2019: 228-233 (CCF B)
   - [pdf](doc/DATE2019.pdf)
 - Fuyang Li, Qing'an Li, Chun Jason Xue:

@@ -132,4 +132,6 @@ make
 ## 可能的问题及解决方法
 问题：在64位机器上运行，可能遇到该问题：fatal error: sys/cdefs.h no such file or directory
 
+原因：部分工具是基于32位的glibc库开发的；需要使用对应的库文件。
 解决方法： sudo apt install libc6-dev-i386
+或：sudo apt-get install gcc-multilib
