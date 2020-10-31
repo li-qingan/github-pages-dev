@@ -21,17 +21,13 @@ layout: defaultCourse
 作者是C语言的发明者。csapp从程序员的角度理解计算机系统，而C语言是最接近机器底层的编程语言，汇编语言是最接近程序员的机器语言。因此，C语言和汇编语言是该门课程的必修语言。
 
 ## 理论课成绩构成
-- 课堂提问：5分（共2次，每次2.5分）<a href="course-score">点击查看</a>
-- 平时作业：25分
-- 期末考试：70分
+- 课堂提问+平时作业：20%
+- Bomb实验：15%
+- Attack实验：15%
+- 期末考试：50%
   
 ## 实验课程
-1. Data lab（20分，<a href="DataLab.html">点击查看详细说明</a>）
-2. Bomb lab（25分，<a href="BombLab.html">点击查看详细说明</a>）
-3. Attack lab（25分，<a href="AttackLab.html">点击查看详细说明</a>）
-4. 实验报告（30分，不少于800字）
-   - 内容包括某个具体实验过程钟遇到的问题、挑战、解决方案。
-   - 内容还应包括该课程的感受及建议。
-
-5. 实验课成绩<a href="exp-score">点击查看</a>
+1. Data lab（<a href="DataLab.html">点击查看详细说明</a>）
+2. Bomb lab（<a href="BombLab.html">点击查看详细说明</a>）
+3. Attack lab（<a href="AttackLab.html">点击查看详细说明</a>）
 
